@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.3.16",
+    "@formspree/react": "^2.2.4",
     "@stripe/stripe-js": "^1.14.0",
     "@svgr/cli": "^5.5.0",
     "@woocommerce/woocommerce-rest-api": "^1.0.1",
