@@ -14,14 +14,18 @@ import { useState, useEffect } from "react";
 export default function Product(props) {
   const { product } = props;
 
-  const [size, setSize] = useState(null);
+  // this is the code I have added which is fetching the product variations from the API
 
-  const productSizes = product.attributes.nodes[0].options;
+  const [size, setSize] = useState("S");
 
   const handleSizeChange = (e) => {
     const selectedSize = e.target.value;
     setSize(selectedSize);
   };
+
+  const productSizes = product.attributes.nodes[0].options;
+
+  //
 
   const router = useRouter();
 
