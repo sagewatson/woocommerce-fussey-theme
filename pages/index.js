@@ -16,12 +16,25 @@ export default function Home(props) {
         {/*Hero Carousel*/}
         <HeroCarousel heroCarousel={heroCarousel} />
         {/*Main Slider*/}
-        <Image
+        {/* <Image
           src="https://my-wordpress.fussey.co/wp-content/uploads/2021/12/main-slider.jpg"
           alt="Main Slider"
           width="2112"
           height="1250"
-        />
+        /> */}
+        <video
+          autoPlay
+          loop
+          muted
+          style={{
+            width: "100%",
+          }}
+        >
+          <source
+            src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/Short-Vid.mp4"
+            type="video/mp4"
+          />
+        </video>
         {/*Products*/}
         <div
           id="products-anchor"
