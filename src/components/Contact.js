@@ -10,7 +10,7 @@ function Contact() {
     );
   }
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form text-white" onSubmit={handleSubmit}>
       <h2 className="text-white text-5xl text-center contact-us">Contact Us</h2>
       <label htmlFor="name">Name</label>
       <input
