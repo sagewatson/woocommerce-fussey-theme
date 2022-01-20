@@ -34,7 +34,7 @@ function Contact() {
 
       <label htmlFor="message">Your Message </label>
       <textarea
-        class="feedback-input"
+        className="feedback-input"
         id="message"
         name="message"
         placeholder="Comment"
