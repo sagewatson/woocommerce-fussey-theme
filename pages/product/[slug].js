@@ -23,6 +23,8 @@ export default function Product(props) {
     setSize(selectedSize);
   };
 
+  console.log(product);
+
   const productSizes = product.attributes.nodes[0].options;
 
   //

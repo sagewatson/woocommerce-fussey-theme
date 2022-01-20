@@ -11,10 +11,156 @@ import ADD_TO_CART from "../../mutations/add-to-cart";
 
 const AddToCart = (props) => {
   const { product } = props;
+  const { size } = props;
+
+  let sizeThatIsSelected = 0;
+
+  // hoodie
+
+  if (size === "S" && product.productId === 53) {
+    sizeThatIsSelected = 56;
+  }
+
+  if (size === "M" && product.productId === 53) {
+    sizeThatIsSelected = 57;
+  }
+
+  if (size === "L" && product.productId === 53) {
+    sizeThatIsSelected = 58;
+  }
+
+  if (size === "XL" && product.productId === 53) {
+    sizeThatIsSelected = 59;
+  }
+
+  // blue crewneck
+
+  if (size === "S" && product.productId === 100) {
+    sizeThatIsSelected = 101;
+  }
+
+  if (size === "M" && product.productId === 100) {
+    sizeThatIsSelected = 102;
+  }
+
+  if (size === "L" && product.productId === 100) {
+    sizeThatIsSelected = 103;
+  }
+
+  if (size === "XL" && product.productId === 100) {
+    sizeThatIsSelected = 104;
+  }
+
+  // tie dye tee
+
+  if (size === "S" && product.productId === 93) {
+    sizeThatIsSelected = 94;
+  }
+
+  if (size === "M" && product.productId === 93) {
+    sizeThatIsSelected = 95;
+  }
+
+  if (size === "L" && product.productId === 93) {
+    sizeThatIsSelected = 96;
+  }
+
+  if (size === "XL" && product.productId === 93) {
+    sizeThatIsSelected = 97;
+  }
+
+  // blue set
+
+  if (size === "S" && product.productId === 86) {
+    sizeThatIsSelected = 87;
+  }
+
+  if (size === "M" && product.productId === 86) {
+    sizeThatIsSelected = 88;
+  }
+
+  if (size === "L" && product.productId === 86) {
+    sizeThatIsSelected = 89;
+  }
+
+  // long sleeve
+
+  if (size === "S" && product.productId === 81) {
+    sizeThatIsSelected = 82;
+  }
+
+  if (size === "M" && product.productId === 81) {
+    sizeThatIsSelected = 83;
+  }
+
+  if (size === "L" && product.productId === 81) {
+    sizeThatIsSelected = 84;
+  }
+
+  if (size === "XL" && product.productId === 81) {
+    sizeThatIsSelected = 85;
+  }
+
+  // tie dye shorts
+
+  if (size === "S" && product.productId === 72) {
+    sizeThatIsSelected = 73;
+  }
+
+  if (size === "M" && product.productId === 72) {
+    sizeThatIsSelected = 74;
+  }
+
+  if (size === "L" && product.productId === 72) {
+    sizeThatIsSelected = 75;
+  }
+
+  if (size === "XL" && product.productId === 72) {
+    sizeThatIsSelected = 76;
+  }
+
+  // logo crewneck
+
+  if (size === "S" && product.productId === 65) {
+    sizeThatIsSelected = 66;
+  }
+
+  if (size === "M" && product.productId === 65) {
+    sizeThatIsSelected = 67;
+  }
+
+  if (size === "L" && product.productId === 65) {
+    sizeThatIsSelected = 68;
+  }
+
+  if (size === "XL" && product.productId === 65) {
+    sizeThatIsSelected = 69;
+  }
+
+  // blue tee
+
+  if (size === "S" && product.productId === 45) {
+    sizeThatIsSelected = 61;
+  }
+
+  if (size === "M" && product.productId === 45) {
+    sizeThatIsSelected = 62;
+  }
+
+  if (size === "L" && product.productId === 45) {
+    sizeThatIsSelected = 63;
+  }
+
+  if (size === "XL" && product.productId === 45) {
+    sizeThatIsSelected = 64;
+  }
+
+  console.log(size, sizeThatIsSelected, product.productId);
 
   const productQryInput = {
     clientMutationId: v4(), // Generate a unique id.
     productId: product.productId,
+    variationId: sizeThatIsSelected,
   };
 
   const [cart, setCart] = useContext(AppContext);
