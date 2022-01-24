@@ -213,8 +213,6 @@ export const removeItemFromCart = (productId) => {
 export const getFormattedCart = (data) => {
   let formattedCart = null;
 
-  // console.log(data);
-
   if (undefined === data || !data.cart.contents.nodes.length) {
     return formattedCart;
   }
@@ -229,7 +227,6 @@ export const getFormattedCart = (data) => {
   for (let i = 0; i < givenProducts.length; i++) {
     const givenProduct = givenProducts?.[i]?.product?.node;
 
-    console.log(givenProducts);
     const product = {};
     const total = getFloatVal(givenProducts[i].total);
 
