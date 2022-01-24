@@ -155,8 +155,6 @@ const AddToCart = (props) => {
     sizeThatIsSelected = 64;
   }
 
-  console.log(size, sizeThatIsSelected, product.productId);
-
   const productQryInput = {
     clientMutationId: v4(), // Generate a unique id.
     productId: product.productId,
