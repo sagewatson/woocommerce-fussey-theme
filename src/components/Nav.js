@@ -48,12 +48,12 @@ const Nav = () => {
           } w-full overflow-hidden lg:h-full flex-grow lg:flex lg:items-center lg:w-auto`}
         >
           <div className="font-medium uppercase lg:flex-grow text-xl">
-            <Link href="#products-anchor">
+            <Link href="/#products-anchor">
               <a className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
                 Shop
               </a>
             </Link>
-            <Link href="#contact-form">
+            <Link href="/#contact-form">
               <a className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
                 Contact
               </a>

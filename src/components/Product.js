@@ -25,13 +25,13 @@ const Product = (props) => {
           </a>
         </Link>
         <div className="product-info">
-          <h3 className="product-title mt-3 font-bold text-white">
+          <h3 className="product-title mt-3 font-bold text-white uppercase text-2xl">
             {product.name ? product.name : ""}
           </h3>
-          <div
+          {/* <div
             className="product-description text-sm text-white "
             dangerouslySetInnerHTML={{ __html: product?.description }}
-          />
+          /> */}
           <Price
             salesPrice={product?.price}
             regularPrice={product?.regularPrice}
@@ -39,7 +39,9 @@ const Product = (props) => {
           {/* <AddToCartButton product={product} /> */}
           <Link href={`/product/${product?.slug}`}>
             <a>
-              <button className="glow-on-hover">Buy now</button>
+              <button className="px-3 py-1 bg-white rounded-sm text-sm border-solid border border-current inline-block hover:bg-purple-600 hover:text-white hover:border-purple-600">
+                Buy now
+              </button>
             </a>
           </Link>
         </div>
