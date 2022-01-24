@@ -1,5 +1,6 @@
 import Layout from "../src/components/Layout";
 import Image from "next/image";
+import Link from "next/link";
 import Product from "../src/components/Product";
 import client from "../src/components/ApolloClient";
 import Contact from "../src/components/Contact";
@@ -26,6 +27,7 @@ export default function Home(props) {
           autoPlay
           loop
           muted
+          playsInline
           style={{
             width: "100%",
           }}
@@ -59,7 +61,7 @@ export default function Home(props) {
             />
             <p className="text-white text-3xl">COMING SOON</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 text-white text-center">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 text-white text-center">
             <Image
               src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/rsz_img_3098_1.jpg"
               alt="yellow hoodie"
@@ -80,10 +82,75 @@ export default function Home(props) {
                 of ....
               </p>
             </span>
+          </div> */}
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 text-white text-center">
+            <Image
+              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/100-voucher.jpg"
+              alt="win a $100 voucher"
+              width="838"
+              height="1000"
+            />
+            <span>
+              <h2 className="text-5xl mb-5">WIN A $100 VOUCHER!</h2>
+              <p className="text-2xl">
+                Follow the rules on our Instagram and be in the draw to win a
+                $100 voucher for our site.
+              </p>
+              <br />
+              <span className="text-2xl">
+                <p>To enter simply:</p>
+                <p>1. Follow us on Instagram @fussey_ </p>
+                <p> 2. Tag 2 friends in the comments </p>
+                <p> 3. Share on your story for 5 extra entries </p>
+              </span>
+              <br />
+              <Link href={`https://www.instagram.com/fussey_/`}>
+                <a target="_blank">
+                  <button className="text-black px-3 py-1 bg-white rounded-sm text-sm border-solid border border-current inline-block hover:bg-purple-600 hover:text-white hover:border-purple-600">
+                    Enter here
+                  </button>
+                </a>
+              </Link>
+            </span>
           </div>
         </div>
         <div id="contact-form">
           <Contact />
+        </div>
+        <p className="text-white text-center mt-5">LET'S GET SOCIAL</p>
+        <div className="flex flex-wrap overflow-hidden hover:opacity-90">
+          <div className="w-1/4 overflow-hidden ">
+            <Image
+              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/crewneck.jpg"
+              alt="win a $100 voucher"
+              width="1000"
+              height="1000"
+            />
+          </div>
+          <div className="w-1/4 overflow-hidden">
+            <Image
+              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/tie-dye-shorts.jpg"
+              alt="win a $100 voucher"
+              width="1000"
+              height="1000"
+            />
+          </div>
+          <div className="w-1/4 overflow-hidden">
+            <Image
+              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/grafitti-long-sleeve.jpg"
+              alt="win a $100 voucher"
+              width="1000"
+              height="1000"
+            />
+          </div>
+          <div className="w-1/4 overflow-hidden">
+            <Image
+              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/yellow-hoodie.jpg"
+              alt="win a $100 voucher"
+              width="1000"
+              height="1000"
+            />
+          </div>
         </div>
       </div>
     </Layout>
