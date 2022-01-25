@@ -17,6 +17,15 @@ body {
   background: black;
 }
 
+@media only screen and (max-width: 600px) {
+  .woo-next-cart-element {
+    font-size: 0.8rem;
+  }
+  .cart-product-heading {
+    text-align: center;
+  }
+}
+
 .contact-form {
   max-width: 420px;
   margin: auto;
@@ -83,7 +92,7 @@ textarea {
 .product-images {
   background-color: rgb(243, 243, 243);
   border-radius: 25px;
-  width: 90%;
+  width: 100%;
   padding: 2rem;
 }
 

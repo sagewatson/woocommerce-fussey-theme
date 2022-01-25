@@ -150,7 +150,10 @@ const CartItemsContainer = () => {
                   <th className="woo-next-cart-heading-el" scope="col">
                     Price
                   </th>
-                  <th className="woo-next-cart-heading-el" scope="col">
+                  <th
+                    className="woo-next-cart-heading-el cart-product-heading"
+                    scope="col"
+                  >
                     Quantity
                   </th>
                   <th className="woo-next-cart-heading-el" scope="col">

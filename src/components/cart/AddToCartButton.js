@@ -207,7 +207,7 @@ const AddToCart = (props) => {
   };
 
   return (
-    <div>
+    <div className="mt-2">
       {/*	Check if its an external product then put its external buy link */}
       {"ExternalProduct" === product.__typename ? (
         <a

@@ -61,28 +61,6 @@ export default function Home(props) {
             />
             <p className="text-white text-3xl">COMING SOON</p>
           </div>
-          {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 text-white text-center">
-            <Image
-              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/rsz_img_3098_1.jpg"
-              alt="yellow hoodie"
-              width="685"
-              height="838"
-            />
-            <span>
-              <h2 className="text-5xl mb-5">VISIONARY STREETWEAR</h2>
-              <p className="text-2xl">
-                At Fussey, we are building a brand which goes further than just
-                wearing a logo. We hold the ideology of having your own
-                identity. Whether you want to fit in or stand out, our mission
-                is to represent the youth.
-              </p>
-              <br />
-              <p className="text-2xl">
-                When choosing our brand name and logo, we wanted to show a mix
-                of ....
-              </p>
-            </span>
-          </div> */}
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 text-white text-center">
             <Image
               src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/100-voucher.jpg"
@@ -117,12 +95,12 @@ export default function Home(props) {
         <div id="contact-form">
           <Contact />
         </div>
-        <p className="text-white text-center mt-5">LET'S GET SOCIAL</p>
+        <p className="text-white text-center mt-5 text-3xl">LET'S GET SOCIAL</p>
         <div className="flex flex-wrap overflow-hidden hover:opacity-90">
           <div className="w-1/4 overflow-hidden ">
             <Image
               src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/crewneck.jpg"
-              alt="win a $100 voucher"
+              alt="crewneck"
               width="1000"
               height="1000"
             />
@@ -130,7 +108,7 @@ export default function Home(props) {
           <div className="w-1/4 overflow-hidden">
             <Image
               src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/tie-dye-shorts.jpg"
-              alt="win a $100 voucher"
+              alt="tie dye shorts"
               width="1000"
               height="1000"
             />
@@ -138,7 +116,7 @@ export default function Home(props) {
           <div className="w-1/4 overflow-hidden">
             <Image
               src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/grafitti-long-sleeve.jpg"
-              alt="win a $100 voucher"
+              alt="long sleeve"
               width="1000"
               height="1000"
             />
@@ -146,7 +124,7 @@ export default function Home(props) {
           <div className="w-1/4 overflow-hidden">
             <Image
               src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/yellow-hoodie.jpg"
-              alt="win a $100 voucher"
+              alt="yellow hoodie"
               width="1000"
               height="1000"
             />
