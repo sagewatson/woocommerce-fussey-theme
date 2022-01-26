@@ -4,6 +4,7 @@ import Link from "next/link";
 import Product from "../src/components/Product";
 import client from "../src/components/ApolloClient";
 import Contact from "../src/components/Contact";
+import { Instagram } from "../src/components/icons";
 
 import PRODUCTS_AND_CATEGORIES_QUERY from "../src/queries/product-and-categories";
 import HeroCarousel from "../src/components/home/hero-carousel";
@@ -13,6 +14,9 @@ export default function Home(props) {
 
   return (
     <Layout>
+      <div className="top-bar bg-white text-black py-3 w-full text-center uppercase ">
+        <p>Free shipping on all orders</p>
+      </div>
       <div className="bg-black">
         {/*Hero Carousel*/}
         <HeroCarousel heroCarousel={heroCarousel} />
@@ -68,14 +72,16 @@ export default function Home(props) {
               width="838"
               height="1000"
             />
-            <span>
-              <h2 className="text-5xl mb-5">WIN A $100 VOUCHER!</h2>
-              <p className="text-2xl">
+            <div>
+              <h2 className="text-5xl mb-5 win-voucher-text">
+                WIN A $100 VOUCHER!
+              </h2>
+              <p className="text-2xl win-voucher-text">
                 Follow the rules on our Instagram and be in the draw to win a
                 $100 voucher for our site.
               </p>
               <br />
-              <span className="text-2xl">
+              <span className="text-2xl win-voucher-instructions">
                 <p>To enter simply:</p>
                 <p>1. Follow us on Instagram @fussey_ </p>
                 <p> 2. Tag 2 friends in the comments </p>
@@ -84,50 +90,71 @@ export default function Home(props) {
               <br />
               <Link href={`https://www.instagram.com/fussey_/`}>
                 <a target="_blank">
-                  <button className="text-black px-3 py-1 bg-white rounded-sm text-sm border-solid border border-current inline-block hover:bg-purple-600 hover:text-white hover:border-purple-600">
+                  <button className="text-white px-3 py-1 bg-purple-600 rounded-sm text-sm border-solid border border-current border-purple-600 inline-block hover:bg-white hover:text-black hover:border-white">
                     Enter here
                   </button>
                 </a>
               </Link>
-            </span>
+            </div>
           </div>
         </div>
         <div id="contact-form">
           <Contact />
         </div>
-        <p className="text-white text-center mt-5 text-3xl">LET'S GET SOCIAL</p>
-        <div className="flex flex-wrap overflow-hidden hover:opacity-90">
-          <div className="w-1/4 overflow-hidden ">
-            <Image
-              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/crewneck.jpg"
-              alt="crewneck"
-              width="1000"
-              height="1000"
-            />
+        <p className="text-white uppercase text-center mt-5 text-3xl">
+          Follow us on Instagram
+        </p>
+        <div class="flex flex-wrap overflow-hidden">
+          <div class="instagram-display w-full overflow-hidden sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+            <Link href="https://www.instagram.com/fussey_/?hl=en">
+              <a target="_blank">
+                <Image
+                  src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/crewneck.jpg"
+                  alt="black crewneck instagram"
+                  width="1000"
+                  height="1000"
+                />
+              </a>
+            </Link>
           </div>
-          <div className="w-1/4 overflow-hidden">
-            <Image
-              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/tie-dye-shorts.jpg"
-              alt="tie dye shorts"
-              width="1000"
-              height="1000"
-            />
+
+          <div class="instagram-display w-full overflow-hidden sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+            <Link href="https://www.instagram.com/fussey_/?hl=en">
+              <a target="_blank">
+                <Image
+                  src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/tie-dye-shorts.jpg"
+                  alt="tie dye instagram"
+                  width="1000"
+                  height="1000"
+                />
+              </a>
+            </Link>
           </div>
-          <div className="w-1/4 overflow-hidden">
-            <Image
-              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/grafitti-long-sleeve.jpg"
-              alt="long sleeve"
-              width="1000"
-              height="1000"
-            />
+
+          <div class="instagram-display w-full overflow-hidden sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+            <Link href="https://www.instagram.com/fussey_/?hl=en">
+              <a target="_blank">
+                <Image
+                  src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/grafitti-long-sleeve.jpg"
+                  alt="grafitti long sleeve instagram"
+                  width="1000"
+                  height="1000"
+                />
+              </a>
+            </Link>
           </div>
-          <div className="w-1/4 overflow-hidden">
-            <Image
-              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/yellow-hoodie.jpg"
-              alt="yellow hoodie"
-              width="1000"
-              height="1000"
-            />
+
+          <div class="instagram-display w-full overflow-hidden sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
+            <Link href="https://www.instagram.com/fussey_/?hl=en">
+              <a target="_blank">
+                <Image
+                  src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/yellow-hoodie.jpg"
+                  alt="yellow hoodie instagram"
+                  width="1000"
+                  height="1000"
+                />
+              </a>
+            </Link>
           </div>
         </div>
       </div>
