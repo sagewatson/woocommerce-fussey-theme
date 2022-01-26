@@ -11,10 +11,10 @@ function Contact() {
   }
   return (
     <form className="contact-form text-white pt-10" onSubmit={handleSubmit}>
-      <h2 className="text-white text-4xl text-center contact-us uppercase">
+      <h2 className="text-white text-4xl text-center contact-us uppercase mb-4">
         Contact Us
       </h2>
-      <label htmlFor="name">Name</label>
+      {/* <label htmlFor="name"></label> */}
       <input
         className="feedback-input"
         id="name"
@@ -24,7 +24,7 @@ function Contact() {
       />
       <ValidationError prefix="name" field="name" errors={state.errors} />
 
-      <label htmlFor="email">Email Address </label>
+      {/* <label htmlFor="email">Email Address </label> */}
       <input
         className="feedback-input"
         id="email"
@@ -34,7 +34,7 @@ function Contact() {
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-      <label htmlFor="message">Your Message </label>
+      {/* <label htmlFor="message">Your Message </label> */}
       <textarea
         className="feedback-input"
         id="message"

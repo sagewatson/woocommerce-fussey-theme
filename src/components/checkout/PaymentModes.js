@@ -21,7 +21,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
         </label>
       </div>
       {/*Pay with Paypal*/}
-      <div className="form-check woo-next-payment-input-container mt-2">
+      {/* <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
           <input
             onChange={handleOnChange}
@@ -33,9 +33,9 @@ const PaymentModes = ({ input, handleOnChange }) => {
           />
           <span className="woo-next-payment-content">Pay with Paypal</span>
         </label>
-      </div>
+      </div> */}
       {/*Check Payments*/}
-      <div className="form-check woo-next-payment-input-container mt-2">
+      {/* <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
           <input
             onChange={handleOnChange}
@@ -47,9 +47,9 @@ const PaymentModes = ({ input, handleOnChange }) => {
           />
           <span className="woo-next-payment-content">Check Payments</span>
         </label>
-      </div>
+      </div> */}
       {/*Pay with Stripe*/}
-      <div className="form-check woo-next-payment-input-container mt-2">
+      {/* <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
           <input
             onChange={handleOnChange}
@@ -61,8 +61,8 @@ const PaymentModes = ({ input, handleOnChange }) => {
           />
           <span className="woo-next-payment-content">Cash on Delivery</span>
         </label>
-      </div>
-      <div className="form-check woo-next-payment-input-container mt-2">
+      </div> */}
+      {/* <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
           <input
             onChange={handleOnChange}
@@ -74,8 +74,8 @@ const PaymentModes = ({ input, handleOnChange }) => {
           />
           <span className="woo-next-payment-content">JCC</span>
         </label>
-      </div>
-      <div className="form-check woo-next-payment-input-container mt-2">
+      </div> */}
+      {/* <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
           <input
             onChange={handleOnChange}
@@ -87,7 +87,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
           />
           <span className="woo-next-payment-content">CC Avenue</span>
         </label>
-      </div>
+      </div> */}
       <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
           <input
@@ -98,13 +98,13 @@ const PaymentModes = ({ input, handleOnChange }) => {
             type="radio"
             checked={"stripe-mode" === paymentMethod}
           />
-          <span className="woo-next-payment-content">Stripe</span>
+          <span className="woo-next-payment-content">Stripe (Credit Card)</span>
         </label>
       </div>
       {/*	Payment Instructions*/}
       <div className="woo-next-checkout-payment-instructions mt-2">
-        Please send a check to Store Name, Store Street, Store Town, Store State
-        / County, Store Postcode.
+        * If choosing Bank Transfer, please deposit the amount shown to our ASB
+        account: 12-3096-0023373-00
       </div>
     </div>
   );
