@@ -26,6 +26,18 @@ body {
   }
 }
 
+.instagram-display:hover {
+  opacity: 90%;
+}
+
+.top-bar {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.win-voucher-text {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
 .contact-form {
   max-width: 420px;
   margin: auto;
@@ -211,6 +223,10 @@ textarea {
   }
 
   .social-text {
+    display: none;
+  }
+
+  .win-voucher-instructions {
     display: none;
   }
 }
