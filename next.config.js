@@ -21,6 +21,7 @@ module.exports = {
    * This is needed to ensure that external urls can't be abused.
    */
   images: {
-    domains: [allowedImageWordPressDomain, "via.placeholder.com"],
+    // domains: [allowedImageWordPressDomain, "via.placeholder.com"],
+    domains: [allowedImageWordPressDomain],
   },
 };
