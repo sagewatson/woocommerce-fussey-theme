@@ -66,7 +66,7 @@ const AddToCart = (props) => {
   }
 
   if (size === "XL" && product.productId === 93) {
-    sizeThatIsSelected = 97;
+    sizeThatIsSelected = 99;
   }
 
   // blue set
@@ -155,6 +155,34 @@ const AddToCart = (props) => {
     sizeThatIsSelected = 64;
   }
 
+  // blue tee set
+
+  if (size === "S" && product.productId === 233) {
+    sizeThatIsSelected = 234;
+  }
+
+  if (size === "M" && product.productId === 233) {
+    sizeThatIsSelected = 235;
+  }
+
+  if (size === "L" && product.productId === 233) {
+    sizeThatIsSelected = 236;
+  }
+
+  // blue crew set
+
+  if (size === "S" && product.productId === 228) {
+    sizeThatIsSelected = 230;
+  }
+
+  if (size === "M" && product.productId === 228) {
+    sizeThatIsSelected = 231;
+  }
+
+  if (size === "L" && product.productId === 228) {
+    sizeThatIsSelected = 232;
+  }
+
   const productQryInput = {
     clientMutationId: v4(), // Generate a unique id.
     productId: product.productId,
@@ -222,9 +250,9 @@ const AddToCart = (props) => {
           disabled={addToCartLoading}
           onClick={handleAddToCartClick}
           className={cx(
-            "px-3 py-1 bg-white rounded-sm mr-3 text-sm border-solid border border-current",
+            "px-3 py-1 bg-purple-600 text-white rounded-sm mr-3 text-sm hover:bg-white hover:text-black ",
             {
-              "hover:bg-purple-600 hover:text-white hover:border-purple-600": !addToCartLoading,
+              "hover:bg-white hover:text-black": !addToCartLoading,
             },
             { "opacity-50 cursor-not-allowed": addToCartLoading }
           )}
