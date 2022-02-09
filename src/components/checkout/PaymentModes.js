@@ -7,7 +7,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
     <div className="mt-3 text-white">
       <Error errors={errors} fieldName={"paymentMethod"} />
       {/*Direct bank transfers*/}
-      <div className="form-check woo-next-payment-input-container mt-2">
+      {/* <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
           <input
             onChange={handleOnChange}
@@ -19,7 +19,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
           />
           <span className="woo-next-payment-content">Direct Bank Transfer</span>
         </label>
-      </div>
+      </div> */}
       {/*Pay with Paypal*/}
       {/* <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
@@ -88,6 +88,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
           <span className="woo-next-payment-content">CC Avenue</span>
         </label>
       </div> */}
+      <h2 className="text-xl">Select your payment method: </h2>
       <div className="form-check woo-next-payment-input-container mt-2">
         <label className="form-check-label">
           <input
@@ -102,10 +103,10 @@ const PaymentModes = ({ input, handleOnChange }) => {
         </label>
       </div>
       {/*	Payment Instructions*/}
-      <div className="woo-next-checkout-payment-instructions mt-2">
+      {/* <div className="woo-next-checkout-payment-instructions mt-2">
         * If choosing Bank Transfer, please deposit the amount shown to our ASB
         account: 12-3096-0023373-00
-      </div>
+      </div> */}
     </div>
   );
 };

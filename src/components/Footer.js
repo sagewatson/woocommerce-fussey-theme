@@ -7,7 +7,8 @@ const Footer = () => (
       <div className="footer-text flex-none md:flex items-center justify-between text-xl">
         <p className="social-text">Follow us on social media</p>
         <span className="text-center">
-          © Fussey 2022. Website by Sage Watson
+          © Fussey 2022.{" "}
+          <span className="footer-text-mobile">Website by Sage Watson</span>
         </span>
         <span className="text-center stripe-logo">
           <Image

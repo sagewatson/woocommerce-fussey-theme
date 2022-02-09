@@ -71,8 +71,10 @@ const CartItem = ({
           alt={item.image.title}
         />
       </td>
-      <td className="woo-next-cart-element text-white">{item.name}</td>
-      <td className="woo-next-cart-element text-white">
+      <td className="woo-cart-item-name woo-next-cart-element text-white">
+        {item.name}
+      </td>
+      <td className="woo-next-cart-element text-white woo-cart-item-price">
         {"string" !== typeof item.price ? item.price.toFixed(2) : item.price}
       </td>
 

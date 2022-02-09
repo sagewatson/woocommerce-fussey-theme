@@ -21,9 +21,6 @@ export default function Product(props) {
     setSize(selectedSize);
   };
 
-  // const productSizes = product.attributes.nodes[0].options;
-  // const productSizes = ["S", "M", "L", "XL"];
-
   const router = useRouter();
 
   // If the page is not yet generated, this will be displayed

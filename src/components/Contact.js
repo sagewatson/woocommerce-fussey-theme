@@ -11,7 +11,7 @@ function Contact() {
   }
   return (
     <form className="contact-form text-white pt-10" onSubmit={handleSubmit}>
-      <h2 className="text-white text-4xl text-center contact-us uppercase mb-4">
+      <h2 className="text-white text-center contact-us uppercase mb-4">
         Contact Us
       </h2>
       {/* <label htmlFor="name"></label> */}
