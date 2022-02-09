@@ -21,12 +21,6 @@ export default function Home(props) {
         {/*Hero Carousel*/}
         <HeroCarousel heroCarousel={heroCarousel} />
         {/*Main Slider*/}
-        {/* <Image
-          src="https://my-wordpress.fussey.co/wp-content/uploads/2021/12/main-slider.jpg"
-          alt="Main Slider"
-          width="2112"
-          height="1250"
-        /> */}
         <video
           autoPlay
           loop
@@ -81,7 +75,7 @@ export default function Home(props) {
                 $100 voucher for our site.
               </p>
               <br />
-              <span className="text-2xl win-voucher-instructions">
+              <span className="text-xl win-voucher-instructions leading-9">
                 <p>To enter simply:</p>
                 <p>1. Follow us on Instagram @fussey_ </p>
                 <p> 2. Tag 2 friends in the comments </p>
@@ -90,9 +84,7 @@ export default function Home(props) {
               <br />
               <Link href={`https://www.instagram.com/fussey_/`}>
                 <a target="_blank">
-                  <button className="text-white px-3 py-1 bg-purple-600 rounded-sm text-sm border-solid border border-current border-purple-600 inline-block hover:bg-white hover:text-black hover:border-white">
-                    Enter here
-                  </button>
+                  <button className="enter-here">Enter here</button>
                 </a>
               </Link>
             </div>
@@ -101,61 +93,69 @@ export default function Home(props) {
         <div id="contact-form">
           <Contact />
         </div>
-        <p className="text-white uppercase text-center mt-5 text-3xl">
-          Follow us on Instagram
-        </p>
-        <div class="flex flex-wrap overflow-hidden">
-          <div class="instagram-display w-full overflow-hidden sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-            <Link href="https://www.instagram.com/fussey_/?hl=en">
-              <a target="_blank">
-                <Image
-                  src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/crewneck.jpg"
-                  alt="black crewneck instagram"
-                  width="1000"
-                  height="1000"
-                />
-              </a>
-            </Link>
-          </div>
-
-          <div class="instagram-display w-full overflow-hidden sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-            <Link href="https://www.instagram.com/fussey_/?hl=en">
-              <a target="_blank">
-                <Image
-                  src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/tie-dye-shorts.jpg"
-                  alt="tie dye instagram"
-                  width="1000"
-                  height="1000"
-                />
-              </a>
-            </Link>
-          </div>
-
-          <div class="instagram-display w-full overflow-hidden sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-            <Link href="https://www.instagram.com/fussey_/?hl=en">
-              <a target="_blank">
-                <Image
-                  src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/grafitti-long-sleeve.jpg"
-                  alt="grafitti long sleeve instagram"
-                  width="1000"
-                  height="1000"
-                />
-              </a>
-            </Link>
-          </div>
-
-          <div class="instagram-display w-full overflow-hidden sm:w-1/2 md:w-1/4 lg:w-1/4 xl:w-1/4">
-            <Link href="https://www.instagram.com/fussey_/?hl=en">
-              <a target="_blank">
-                <Image
-                  src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/yellow-hoodie.jpg"
-                  alt="yellow hoodie instagram"
-                  width="1000"
-                  height="1000"
-                />
-              </a>
-            </Link>
-          </div>
+        <Link href="https://www.instagram.com/fussey_/?hl=en">
+          <a target="_blank">
+            <p className="text-white uppercase text-center mt-5 mb-3 text-3xl follow-us-instagram ">
+              Follow us on
+              <span className="follow-insta-svg">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 18 18"
+                  {...props}
+                >
+                  <g fill="#fff">
+                    <path d="M2.637 18h12.726A2.64 2.64 0 0018 15.363V2.637A2.64 2.64 0 0015.363 0H2.637A2.64 2.64 0 000 2.637v12.726A2.64 2.64 0 002.637 18zM1.055 2.637c0-.871.71-1.582 1.582-1.582h12.726c.871 0 1.582.71 1.582 1.582v12.726c0 .871-.71 1.582-1.582 1.582H2.637c-.871 0-1.582-.71-1.582-1.582zm0 0" />
+                    <path d="M9 13.746A4.751 4.751 0 0013.746 9 4.751 4.751 0 009 4.254 4.751 4.751 0 004.254 9 4.751 4.751 0 009 13.746zM9 5.31A3.696 3.696 0 0112.691 9 3.696 3.696 0 019 12.691 3.696 3.696 0 015.309 9 3.696 3.696 0 019 5.309zm0 0M14.273 5.309c.872 0 1.582-.711 1.582-1.582 0-.872-.71-1.582-1.582-1.582-.87 0-1.582.71-1.582 1.582 0 .87.711 1.582 1.582 1.582zm0-2.11a.53.53 0 01.528.528.53.53 0 01-.528.527.53.53 0 01-.527-.527.53.53 0 01.527-.528zm0 0" />
+                  </g>
+                </svg>
+              </span>
+            </p>
+          </a>
+        </Link>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+          <Link href="https://www.instagram.com/fussey_/?hl=en">
+            <a target="_blank">
+              <Image
+                src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/crewneck.jpg"
+                alt="yellow hoodie instagram"
+                width="1000"
+                height="1000"
+              />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/fussey_/?hl=en">
+            <a target="_blank">
+              <Image
+                src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/tie-dye-shorts.jpg"
+                alt="tie dye instagram"
+                width="1000"
+                height="1000"
+              />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/fussey_/?hl=en">
+            <a target="_blank">
+              <Image
+                src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/grafitti-long-sleeve.jpg"
+                alt="grafitti long sleeve instagram"
+                width="1000"
+                height="1000"
+              />
+            </a>
+          </Link>
+          <Link href="https://www.instagram.com/fussey_/?hl=en">
+            <a target="_blank">
+              <Image
+                src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/yellow-hoodie.jpg"
+                alt="yellow hoodie instagram"
+                width="1000"
+                height="1000"
+              />
+            </a>
+          </Link>
         </div>
       </div>
     </Layout>
