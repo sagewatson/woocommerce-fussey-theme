@@ -35,7 +35,7 @@ const ThankYouContent = () => {
   }, [session_id]);
 
   return (
-    <div className="h-almost-screen">
+    <div className="h-almost-screen thank-you-text">
       <div className="w-600px mt-10 m-auto">
         {isSessionFetching ? (
           <Loading />
