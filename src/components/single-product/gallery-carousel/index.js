@@ -49,7 +49,7 @@ const GalleryCarousel = ({ gallery }) => {
           return (
             <div
               key={item?.id}
-              className={`${opacity} banner-img-container absolute top-0 left-0`}
+              className={`${opacity} banner-img-container top-0 left-0`}
             >
               <img
                 src={item?.mediaItemUrl}
