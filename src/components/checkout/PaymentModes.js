@@ -98,6 +98,7 @@ const PaymentModes = ({ input, handleOnChange }) => {
             name="paymentMethod"
             type="radio"
             checked={"stripe-mode" === paymentMethod}
+            required
           />
           <span className="woo-next-payment-content">Stripe (Credit Card)</span>
         </label>
