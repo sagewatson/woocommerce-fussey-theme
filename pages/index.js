@@ -36,61 +36,91 @@ export default function Home(props) {
           />
         </video>
         {/*Products*/}
-        <div
+        {/* <div
           id="products-anchor"
           className="products container mx-auto my-5 px-4 xl:px-0"
-        >
-          <h2 className="products-main-title main-title mb-5 text-xl uppercase">
-            <span className="main-title-inner">NEW ARRIVALS</span>
+        > */}
+        <div id="products-anchor" className="products">
+          <h2 className="products-main-title main-title mb-4 mt-8 text-xl uppercase">
+            <span className="main-title-inner">New Arrivals</span>
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+          <div className="text-center mb-8">
+            <Link href="/shop">
+              <a>
+                <button className="text-white uppercase bg-transparent px-4 py-2 border-solid border-2">
+                  Shop All
+                </button>
+              </a>
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 product-background">
             {products.length
-              ? products.map((product) => (
-                  <Product key={product.id} product={product} />
-                ))
+              ? products
+                  .slice(5, 9)
+                  .map((product) => (
+                    <Product key={product.id} product={product} />
+                  ))
               : ""}
           </div>
-          <div className="text-center mt-8 mb-20">
-            <Image
-              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/Afterpay_Logo_White-1-e1641703148120.png"
-              alt="Afterpay logo"
-              width="493.5"
-              height="121.8"
-            />
-            <p className="text-white text-3xl">COMING SOON</p>
+          <h2 className="products-main-title main-title mb-4 mt-8 text-xl uppercase">
+            <span className="main-title-inner">Women's</span>
+          </h2>
+          <div className="text-center mb-8">
+            <Link href="/shop">
+              <a>
+                <button className="text-white uppercase bg-transparent px-4 py-2 border-solid border-2">
+                  Shop All
+                </button>
+              </a>
+            </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 text-white text-center">
-            <Image
-              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/01/100-voucher.jpg"
-              alt="win a $100 voucher"
-              width="838"
-              height="1000"
-            />
-            <div>
-              <h2 className="text-5xl mb-5 win-voucher-text">
-                WIN A $100 VOUCHER!
-              </h2>
-              <p className="text-2xl win-voucher-text">
-                Follow the rules on our Instagram and be in the draw to win a
-                $100 voucher for our site.
-              </p>
-              <br />
-              <span className="text-xl win-voucher-instructions leading-9">
-                <p>To enter simply:</p>
-                <p>1. Follow us on Instagram @fussey_ </p>
-                <p> 2. Tag 2 friends in the comments </p>
-                <p> 3. Share on your story for 5 extra entries </p>
-              </span>
-              <br />
-              <Link href={`https://www.instagram.com/fussey_/`}>
-                <a target="_blank">
-                  <button className="enter-here">Enter here</button>
-                </a>
-              </Link>
-            </div>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 product-background">
+            {products.length
+              ? products
+                  .slice(0, 4)
+                  .map((product) => (
+                    <Product key={product.id} product={product} />
+                  ))
+              : ""}
           </div>
         </div>
-        <div id="contact-form">
+        <div className="about-us bg-black">
+          <div className="w-8/12 m-auto mb-8 mt-8 bg-black sm:w-6/12 m:w-8/12 lg:w-4/12">
+            <Image
+              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/02/Why-So-Fussey-white-horizontal.png"
+              alt="Why So Fussey?"
+              width="1954"
+              height="353"
+            />
+          </div>
+          <div>
+            <h2 className="uppercase text-center text-3xl mb-8 text-white">
+              Our vision
+            </h2>
+          </div>
+          <div>
+            <p className="text-center text-sm m-auto mb-8 text-white w-6/12">
+              Fussey is a play on words - it's spelt wrong on purpose. But in a world 
+              so judgemental, we forget that it's okay to be wrong sometimes. It's 
+              okay not to be perfect and it's okay not to fit in. In fact, this is exactly 
+              what we stand for. To stand out, to refute normality. Don't be fussy - be Fussey. 
+              <span>
+                <br/>
+                <br/>
+              Only then will you find true freedom.
+              </span>
+            </p>
+          </div>
+          <div className="m-auto w-10/12 sm:w-6/12 m:w-6/12">
+            <Image
+              src="https://my-wordpress.fussey.co/wp-content/uploads/2022/02/About-us.jpg"
+              alt="About us"
+              width="1646"
+              height="1097"
+            />
+          </div>
+        </div>
+        <div id="contact-form" className="bg-black">
           <Contact />
         </div>
         <Link href="https://www.instagram.com/fussey_/?hl=en">
