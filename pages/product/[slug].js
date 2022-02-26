@@ -32,8 +32,8 @@ export default function Product(props) {
   return (
     <Layout>
       {product ? (
-        <div className="single-product container mx-auto my-32 px-4 xl:px-0">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="single-product py-32 px-4 xl:px-0 bg-white">
+          <div className="grid md:grid-cols-2 gap-4">
             <div className="product-images">
               {!isEmpty(product?.galleryImages?.nodes) ? (
                 <GalleryCarousel gallery={product?.galleryImages?.nodes} />
@@ -48,26 +48,26 @@ export default function Product(props) {
               ) : null}
             </div>
             <div className="product-info">
-              <h4 className="products-main-title text-2xl uppercase text-white">
+              <h4 className="products-main-title text-2xl uppercase">
                 {product.name}
               </h4>
               <div
                 dangerouslySetInnerHTML={{
                   __html: product.description,
                 }}
-                className="product-description mb-5 text-white"
+                className="product-description mb-5"
               />
               <Price
                 salesPrice={product?.price}
                 regularPrice={product?.regularPrice}
               />
-              <div className="text-white">
+              <div className="">
                 <p>Size:</p>
                 <select
                   onChange={(e) => handleSizeChange(e)}
                   name="sizes"
                   id="sizes"
-                  className="text-black"
+                  className="text-black bg-gray-200 border-2 rounded border-black"
                 >
                   {product.attributes.nodes[0].options.map((productSize) => (
                     <option key={productSize} value={productSize}>
