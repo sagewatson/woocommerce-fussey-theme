@@ -32,7 +32,7 @@ export default function Product(props) {
   return (
     <Layout>
       {product ? (
-        <div className="single-product py-32 px-4 xl:px-0 bg-white">
+        <div className="single-product px-4 xl:px-0 bg-white">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="product-images">
               {!isEmpty(product?.galleryImages?.nodes) ? (
@@ -67,7 +67,7 @@ export default function Product(props) {
                   onChange={(e) => handleSizeChange(e)}
                   name="sizes"
                   id="sizes"
-                  className="text-black bg-gray-200 border-2 rounded border-black"
+                  className="size-select text-black bg-gray-200"
                 >
                   {product.attributes.nodes[0].options.map((productSize) => (
                     <option key={productSize} value={productSize}>

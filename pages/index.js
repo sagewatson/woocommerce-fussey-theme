@@ -47,7 +47,7 @@ export default function Home(props) {
           <div className="text-center mb-8">
             <Link href="/shop">
               <a>
-                <button className="text-white uppercase bg-transparent px-4 py-2 border-solid border-2">
+                <button className="more-button text-white uppercase bg-transparent px-4 py-2">
                   Shop All
                 </button>
               </a>
@@ -68,7 +68,7 @@ export default function Home(props) {
           <div className="text-center mb-8">
             <Link href="/shop">
               <a>
-                <button className="text-white uppercase bg-transparent px-4 py-2 border-solid border-2">
+                <button className="more-button text-white uppercase bg-transparent px-4 py-2">
                   Shop All
                 </button>
               </a>
@@ -85,7 +85,7 @@ export default function Home(props) {
           </div>
         </div>
         <div className="about-us bg-black">
-          <div className="w-8/12 m-auto mb-8 mt-8 bg-black sm:w-6/12 m:w-8/12 lg:w-4/12">
+          <div className="why-so-fussey mb-8 mt-8">
             <Image
               src="https://my-wordpress.fussey.co/wp-content/uploads/2022/02/Why-So-Fussey-white-horizontal.png"
               alt="Why So Fussey?"
@@ -99,7 +99,7 @@ export default function Home(props) {
             </h2>
           </div>
           <div>
-            <p className="text-center text-sm m-auto mb-8 text-white w-6/12">
+            <p className="vision-desc text-center text-sm m-auto mb-8 text-white">
               Fussey is a play on words - it's spelt wrong on purpose. But in a world 
               so judgemental, we forget that it's okay to be wrong sometimes. It's 
               okay not to be perfect and it's okay not to fit in. In fact, this is exactly 
@@ -111,7 +111,7 @@ export default function Home(props) {
               </span>
             </p>
           </div>
-          <div className="m-auto w-10/12 sm:w-6/12 m:w-6/12">
+          <div className="container mx-auto">
             <Image
               src="https://my-wordpress.fussey.co/wp-content/uploads/2022/02/About-us.jpg"
               alt="About us"
