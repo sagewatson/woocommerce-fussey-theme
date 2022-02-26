@@ -10,7 +10,7 @@ const Product = (props) => {
   return (
     // @TODO Need to handle Group products differently.
     undefined !== product && "GroupProduct" !== product.__typename ? (
-      <div className="product mb-5 text-center py-8">
+      <div className="product text-center ">
         <Link href={`/product/${product?.slug}`}>
           <a>
             <Image

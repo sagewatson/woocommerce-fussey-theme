@@ -18,6 +18,10 @@ html {
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+.product {
+  padding: 2rem 0;
+}
+
 .more-button {
   border: 2px solid white;
 }
@@ -336,6 +340,11 @@ textarea {
 
   .single-product {
     padding: 5rem 0 10rem 0
+  }
+
+  .product {
+    padding: 1.5rem 0;
+
   }
 }
 
