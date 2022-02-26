@@ -50,6 +50,11 @@ const Nav = () => {
           <div className="font-medium uppercase lg:flex-grow text-xl">
             <Link href="/#products-anchor">
               <a className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
+                New Arrivals
+              </a>
+            </Link>
+            <Link href="/shop">
+              <a className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
                 Shop
               </a>
             </Link>
