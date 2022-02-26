@@ -4,7 +4,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   width: 100%;
-  background-color: gray;
+  background-color: black;
 }
 
 html {
@@ -18,10 +18,6 @@ html {
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-body {
-  background: black;
-}
-
 .product-cart-container {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -30,6 +26,23 @@ body {
 .checkout-container {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+}
+
+.about-us {
+  // background-color: rgb(243, 243, 243);
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.products-main-title {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.product {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.product-background {
+  background-color: rgb(243, 243, 243);
 }
 
 @media only screen and (max-width: 600px) {
@@ -68,6 +81,7 @@ body {
 
 .contact-us {
   font-size: 2rem;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .follow-us-instagram {
@@ -89,6 +103,13 @@ body {
 .contact-form {
   max-width: 420px;
   margin: auto;
+}
+
+.product-description {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: small;
+  width: 80%;
 }
 
 .feedback-input {
@@ -150,10 +171,10 @@ textarea {
 }
 
 .product-images {
-  background-color: rgb(243, 243, 243);
+  // background-color: rgb(243, 243, 243);
   border-radius: 25px;
   width: 100%;
-  padding: 2rem;
+  // padding: 2rem;
 }
 
 .product {
@@ -169,7 +190,7 @@ textarea {
 .banner {
   img {
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     object-position: 50% 50%;
   }
@@ -177,6 +198,12 @@ textarea {
 
 .banner-img-container {
   transition: opacity 500ms linear 0s;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 500px;
 }
 
 .banner-content {
@@ -199,7 +226,7 @@ textarea {
 
 .banner-img {
   position: relative;
-  height: 400px;
+  height: 500px;
 }
 
 .slider-button {
@@ -210,13 +237,6 @@ textarea {
   padding: 10px 20px;
   font-size: 24px;
 }
-
-// .products .product-description {
-//   // max-width: 250px;
-//   // // white-space: nowrap;
-//   // overflow: hidden;
-//   // // text-overflow: ellipsis;
-// }
 
 .categories,
 .cart,
@@ -281,14 +301,17 @@ textarea {
   .win-voucher-instructions {
     display: none;
   }
-  // make look a bit better
+
   .banner {
     img {
       width: 100%;
-      height: 300px;
+      height: 450px;
       object-fit: cover;
       object-position: 50% 50%;
-      margin-top: 2rem;
     }
+  }
+
+  .banner-img-container {
+    width: 440px;
   }
 }
